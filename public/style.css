@@ -1,0 +1,71 @@
+:root {
+  --primary: #00f0ff;
+  --background: #000000;
+  --text: #ffffff;
+  --card: #111111;
+  --glow: 0 0 15px var(--primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b0b0b;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 5px rgba(0, 255, 255, 0.1);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  height: 50px;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.icon-btn img {
+  height: 24px;
+}
+
+#input-area {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: #111;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
